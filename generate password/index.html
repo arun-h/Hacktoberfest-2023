@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password gentrater </title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: capitalize;
+        }
+    .container{
+        position:absolute;
+        left: 350px;
+        top: 100px;
+        height:400px;
+        width:50%;
+        background-color: #eee;
+        padding: 5px;
+        border: 1px solid;
+        border-radius: 5px ;
+
+    }
+    h2{
+        text-align: center;
+
+    }
+    form{
+        width: 600px;
+        position: relative;
+        top: 50px;
+        left: 80px;
+         display: grid;
+        grid-template-columns: 200px auto;
+        row-gap: 10px;
+    }
+    form > input{
+        box-sizing: content-box;
+        position: relative;
+         left: 100px;
+         width: 250px;
+         padding: 8px;
+     }
+    form span{
+        position: relative;
+        left:80px
+    }
+    #date{
+        width: 150px;
+    }
+    button{
+        position: relative;
+        top: 50px;
+        left: 400px;
+     padding: 5px;
+     width: 120px;
+     cursor: pointer;;
+    }
+    hr{
+        position: relative;
+        top: 40px;
+    }
+ .out{
+       margin-top: 100px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate password</h2>
+
+        <form action="">
+            <label for="">name <span>&nbsp;:</span></label>
+            <input type="text" id="name" placeholder="name">
+
+            <label for="">Mobile <span>:</span></label>
+            <input type="number" id="num" placeholder="mobile number">
+
+            <label for="">D.O.B<span>&nbsp;&nbsp;&nbsp;:</span> </label>
+            <input type="date" id="date">
+
+            
+            
+            
+            <button type="button" onclick="getpassword()">get</button>
+        </form>
+        <hr>
+        <p class="out" >
+            <p>Your password will appear hear :</p><br>
+            <p id="outcome" ></p>
+        </p>
+      
+     </div>
+<script>
+    function getpassword(){
+        var name= document.getElementById('name').value;
+        var num= document.getElementById('num').value;
+        var date= document.getElementById('date').value;
+        
+        
+        var a=name.slice(0,3);
+        var b=num.slice(0,3);
+        var c=date.slice(0,3);
+
+
+
+        var op = a +" @ "+b + c  ;
+        document.getElementById('outcome').innerHTML = op ;
+    }
+</script>
+    
+</body>
+</html>
