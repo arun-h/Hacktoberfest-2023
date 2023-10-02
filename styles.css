@@ -1,0 +1,15 @@
+/* styles.css */
+/* Add styles for the color-change-button here */
+#color-change-button {
+    display:flex;
+    background-color: #007BFF;
+    color: red;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #color-change-button:hover {
+    background-color: #0056b3;
+  }
+  

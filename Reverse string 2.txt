@@ -1,0 +1,25 @@
+class Solution {
+    public String reverseWords(String s) {
+       int lastspace = -1;
+       char ch[] = s.toCharArray(); 
+        for(int i=0;i<=s.length();i++)
+        {
+            if(i==s.length() || ch[i]==' ')
+            {
+                int start = lastspace +1;
+                int end = i-1;
+                while(start<end)
+                {
+                    char t = ch[start];
+                    ch[start] = ch[end];
+                    ch[end] = t;
+                    start++;
+                    end--;
+                }
+                lastspace = i;
+            }
+        }
+        return new String(ch);
+    }
+}
+        

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Tours and Travels</title>
+    <style>
+        /* css reset */
+        body{
+            color:white;
+            margin:0px;
+            padding :0px;
+            background:url('himalayas-g7bcb40374_1280.jpg');
+            background-repeat: no-repeat ;
+            background-size: 100%;
+            height:3344px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              
+        }
+        .left{
+            position: absolute;
+            top:20px;
+            left :20px;
+            display:inline-block;
+            
+        }
+        .mid{
+            
+            display:block;
+            width:40%;
+            margin: 20px auto;
+        
+        }
+        .right{
+            position:absolute;
+            top:20px;
+            right:15px;
+            display:inline-block;
+       
+        }
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            font-size:17px;
+            font-weight: bold;
+            display:inline-block;
+        }
+        .navbar li a{
+            color:white;
+             text-decoration: none;
+             padding: 3px 16px;
+        }
+        .navbar li a:hover ,.navbar li a.active{
+            text-decoration: underline;
+            color:rgb(49, 46, 46);
+        }
+        .left img{
+            display : block;
+            width:80px;
+            height:80px;
+            margin:auto;
+            }
+            .left div{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .btn{
+                margin: 0px 6px;
+                padding: 6px 7px;
+                background-color:#1f67ad;  
+                color:white;
+                font-weight: bold; 
+                cursor: pointer;  
+                border-radius: 7px;      
+                font-size:17px;     
+            }
+            .btn:hover{
+                background-color: #6e9dcd;
+
+            }
+            .container2{
+                display:inline-block;
+                position:absolute;
+                top:246px;
+                right:250px;
+                margin:30px 30px;
+                padding:37px 30px;
+            }
+            .container1{
+                border:2px solid white;
+                display:inline-block;
+                margin:125px 150px;
+                padding:37px 61px;
+                width:30%;
+                border-radius: 10px;
+            }
+            .formclass input{
+                text-align: center;
+                display : block;
+                width:329px;
+                margin: 8px auto;
+                padding: 4px 34px;
+                border:2px solid black;
+                border-radius: 7px;
+                font-size: 20px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                
+            }
+            .container1 h2{
+                text-align: center;
+            }
+            .buttons input{
+                display:block;
+                width:88%;
+                margin: 6px auto;
+            }
+            .container2{
+                font-size: 25px;
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="school-gda5d97fd8_1280.png" alt="" width="30px" height="80px">
+            <div>Sunshine Tours and Travels</div>
+            
+        </div>
+        <!-- mid bix for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Tour Packages</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Flights</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        </header>
+        <div class="container1">
+            <h2>Search for best deals , bugdet friendly tour packages and much more....
+            </h2>
+            <form action="noaction.php">
+                <div class="formclass">
+                    <input type="text" name="" placeholder="Enter your name"></div>
+                    <div class="formclass"><input type="text" name="" placeholder="Enter your phone number"></div>
+                    <div class="formclass"><input type="text" name="" placeholder="Enter your email id"></div>
+                    <div class="formclass"><input type="text" name="" placeholder="Where do you want to go?"></div>
+                    <div class="formclass"><input type="text" name="" placeholder="Enter your budget for the tour"></div>
+                
+                <div class="buttons">
+                    <input class="btn" type="submit" value="Submit">
+                    <input class="btn" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+        <div class="container2">
+            <h1> Plan your next </h1>
+            <h1>Holiday</h1>
+            <h1>With us. . . . </h1>
+        </div>
+    
+    
+</body>
+</html>

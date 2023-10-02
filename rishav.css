@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    font-family: 'Poppins', sans-serif;
+}
+.main_box{ 
+    background: url(p.png);
+    height: 100vh;
+    background-size: cover;
+    
+}
+.btn_one {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: 0.1s;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: grey;
+    box-shadow: 0px 0px 6px rgb(18, 10, 10);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 5px  rgba(5, 2, 2, 0.6);
+    height: 60px;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 60px;
+    color: rgb(41, 40, 40);
+    font-size: 20px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
+.sidebar_menu .btn_two i{
+    color: rgb(54, 53, 53);
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    cursor: pointer;
+    /*opacity: 0;*/
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    margin: 10px;
+    padding: 10px 20px;
+    
+}
+.sidebar_menu .menu li i,a{ 
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right: 10px;
+}
+.sidebar_menu .social_media {
+    position: absolute;
+    
+    opacity: 0.5 ;
+    left: 25%;
+    bottom: 50px;
+    padding: 0 5px;
+}
+.sidebar_menu .social_media i{
+    color: rgb(0, 0, 0);
+    opacity: 0.5 ;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 5px  rgba(25, 7, 7, 0.6); 
+}
+.btn_one i:hover{
+    transition: 0.1s ease-in-out;
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    transition: 0.1s ease-in-out;
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 2;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+    
+}
+#check:checked~.btn_one{
+    opacity: 0;
+    
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+}
+.main_box .btn_one:checked{
+    background: url(photo.jpg);
+    height: 100vh;
+    width: 100vh;
+    z-index: 2;
+    background-size: cover;
+}
+.forms{
+    
+    margin-left:  59rem;
+    transform: translateY(-50px);
+}
+.inp{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+}
