@@ -6,25 +6,25 @@ def game_Win(comp, you):
     if comp == you:
         return None
 
-    # Check for all possibilities when computer chose s
+    # Check for all possibilities when computer chose 's'
     elif comp == 's':
-        if you=='w':
+        if you == 'w':
             return False
-        elif you=='g':
+        elif you == 'g':
             return True
     
-    # Check for all possibilities when computer chose w
+    # Check for all possibilities when computer chose 'w'
     elif comp == 'w':
-        if you=='g':
+        if you == 'g':
             return False
-        elif you=='s':
+        elif you == 's':
             return True
     
-    # Check for all possibilities when computer chose g
+    # Check for all possibilities when computer chose 'g'
     elif comp == 'g':
-        if you=='s':
+        if you == 's':
             return False
-        elif you=='w':
+        elif you == 'w':
             return True
 
 print("Comp Turn: Snake(s) Water(w) or Gun(g)?")
@@ -36,7 +36,7 @@ elif randNo == 2:
 elif randNo == 3:
     comp = 'g'
 
-you = input("Your Turn: Snake(s) Water(w) or Gun(g)?")
+you = input("Your Turn: Snake(s) Water(w) or Gun(g)?").lower()  # Convert input to lowercase
 a = game_Win(comp, you)
 
 print(f"Computer chose {comp}")
@@ -47,4 +47,5 @@ if a == None:
 elif a:
     print("You Win The game!")
 else:
-    print("You Lose The game !")
+    print("You Lose The game!")
+
