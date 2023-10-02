@@ -1,32 +1,41 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+  SmoothScroll,
+} from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <SmoothScroll speed={0.03}>
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
 
-    <div className='relative z-0 bg-primary'>
-    <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <About />
+          <Experience />
+          {/* <Tech /> */}
+          <Works />
+          <Feedbacks />
 
-        <Navbar />
-        <Hero />
+          <div className="relative z-0">
+            <Contact />
+            {/* <StarsCanvas /> */}
+          </div>
+        </div>
+      </SmoothScroll>
+    </BrowserRouter>
+  );
+};
 
-      </div>
-      
-      <About />
-      <Experience />
-      {/* <Tech /> */}
-      <Works />
-      <Feedbacks />
-
-      <div className='relative z-0'>
-        <Contact />
-        {/* <StarsCanvas /> */}
-
-      </div>
-    </div>
-  </BrowserRouter>
-  )
-}
-
-export default App
+export default App;
