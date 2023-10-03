@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#animated-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+#animated-image:hover {
+    transform: scale(1.2); /* Increase the size by 20% */
+}
