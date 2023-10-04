@@ -1,0 +1,122 @@
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .todo-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions button:hover {
+    background-color: #c82333;
+  }
+  .task {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  .task-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .task:hover .task-buttons {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  
+  
