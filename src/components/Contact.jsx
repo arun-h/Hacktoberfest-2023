@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Popup from "./canvas/Popup";
 
 // templete id - template_z9918pp
 // gamil sercide id - service_aef0zdb
@@ -14,6 +15,7 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
 
   const formRef = useRef();
+  const [bool,setbool]=useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -35,6 +37,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    if(form.email==""){
+      setbool(true);
+      return ;
+    }
 
     emailjs
       .send(
@@ -136,6 +142,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      <Popup open={bool} onclose={()=>setbool(false)}/>
     </div>
   )
 }
