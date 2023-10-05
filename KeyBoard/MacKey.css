@@ -1,0 +1,190 @@
+.main{
+	height: 500px;
+	width: 63%;
+	background-color: #c19f7a;
+	margin: 20px 10px 20px 225px;
+	border-radius: 15px;
+	border: 0.5px solid lightgrey;
+}
+.keyword{
+	height:255px;
+	width: 750px;
+	margin: 22px 22px 0px 22px;
+	border-radius: 7px;
+	border: 1px solid transparent; 
+	box-shadow: inset 0px 0px 7px rgba(0,0,0,0.9);
+}
+/*KEY1*/
+#key1{
+	display: flex;
+	justify-content: space-between;
+	margin:5px 5px 5px 5px;
+}
+.key1{
+	height: 20px;
+	width: 50px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.key1 div p{
+	color: white;
+	text-align: center;
+	margin-top: 8px;
+	margin-left: 40%;
+	height: 5px;
+	width: 1px;
+	font-size: 11px;
+}
+/*KEY2*/
+#key2{
+	display:flex;
+	justify-content: space-between;
+	margin:5px 5px 5px 5px;
+}
+.key2{
+	height: 40px;
+	width: 40px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.key2 div p{
+	color: white;
+	text-align: center;
+	margin-top: 2px;
+	margin-left: 7%;
+	font-size: 15px;
+}
+.key3{
+	height: 40px;
+	width: 40px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.key3 div p{
+	color: white;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: 7%;
+	font-size: 15px;
+
+}
+.key4{
+	height: 40px;
+	width: 40px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.key4 div p{
+	color: white;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: 7%;
+	font-size: 15px;
+	
+}
+.key4 div img{
+	margin-top: 8px;
+	margin-left: 8px;
+	height: 25px;
+	width: 25px;
+	
+}
+#triangle1 {
+	background-color: white;
+	clip-path: polygon(100% 0, 100% 100%, 0 50% );
+	width: 10px;
+	height: 9px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+#triangle2 {
+	background-color: white;
+	clip-path: polygon(50% 0, 100% 100%, 0 100% );
+	width: 10px;
+	height: 10px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+#triangle3 {
+	background-color: white;
+	clip-path: polygon(0 0, 100% 0, 50% 100% );
+	width: 10px;
+	height: 9px;
+	margin-left: 15px;
+	margin-top: -3px;
+}
+
+#triangle4 {
+	background-color: white;
+	clip-path: polygon(0 0, 50% 50%, 0 100%);
+	width: 20px;
+	height: 10px;
+	margin-left: 17px;
+	margin-top: 5px;
+}
+#delete{
+	height: 40px;
+	width: 80px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+#delete div p{
+	color: white;
+	font-size: 15px;
+	text-align: right;
+	margin-top: 24px;
+}
+#tab{
+	height: 40px;
+	width: 85px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+#tab div p{
+	color: white;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 24px;
+}
+.capsret{
+	height: 40px;
+	width: 95px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.capsret div p{
+	color: white;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 24px;
+}
+.shift{
+	height: 40px;
+	width: 105px;
+	border-radius: 3px;
+	background-color: black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+}
+.shift div p{
+	color: white;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 24px;
+}
+
+#keypad{
+	height: 170px;
+	width: 300px;
+	border: 1px solid transparent; 
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+	margin-left: 30%;
+	border-radius: 7px;
+	margin-top: 25px;
+}

@@ -1,13 +1,3 @@
-# Hacktoberfest
+# FrequencyGenerator
 
-You can Create your on issus and then solve them, and create pull requests.
-
-I will add Hacktoberfest Tags and review them.
-If they are okk I will merge them.
-
-Pls don't spam.
-
-
-Youtube video link :- 
-
-GIT GITHUB Guide video link :- https://youtu.be/h-LgFUiK_UM
+![image](https://user-images.githubusercontent.com/85949077/200790471-f19998fb-e9d2-409d-8d47-6048a8c3cf27.png)

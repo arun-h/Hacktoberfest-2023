@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1610367869 source:c:\users\ravindu sandaruwan\desktop\sort_array\main.c
+	<stdio.h>
+	<stdlib.h>
+
