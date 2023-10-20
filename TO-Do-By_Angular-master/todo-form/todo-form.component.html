@@ -1,0 +1,10 @@
+<form (submit)="addItem()">
+  <input type="text" [(ngModel)]="newItem" placeholder="Enter a new item">
+  <button type="submit">Add</button>
+</form>
+
+<ul>
+  <li *ngFor="let item of todoList; let i = index">
+    {{ item }} <button (click)="removeItem(i)">Remove</button>
+  </li>
+</ul>
